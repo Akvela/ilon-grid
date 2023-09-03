@@ -131,11 +131,11 @@
   stroke-dasharray: 40 180;
 }
 
-.ham .active .top {
+.ham.active .top {
   stroke-dashoffset: -98px;
 }
 
-.ham .active .bottom {
+.ham.active .bottom {
   stroke-dashoffset: -138px;
 }
 
@@ -256,7 +256,7 @@
   font-size: 14px;
   background: url('./images/border.png') no-repeat center center;
   color: rgb(255, 255, 255);
-  transition: opacity .2s ease-in; 
+  transition: opacity 0.4s ease-in-out;
   position: relative;
   z-index: 3;
   text-decoration: none;
@@ -419,7 +419,7 @@
   list-style: none;
   cursor: pointer;
   opacity: 0.7;
-  transition: opacity 0.4s ease-in-out, border 0.4s ease-in-out; 
+  transition: opacity 0.4s ease-in-out, border 0.4s ease-in-out;
   padding: 32px 0;
 }
 
