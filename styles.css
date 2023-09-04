@@ -94,7 +94,7 @@
 }
 
 .nav-mobile_open .menu-link:hover { 
-  border-bottom: none;
+  border-bottom: 1px solid transparent;
 }
 
 .ham {
@@ -173,6 +173,7 @@
   transition: opacity 0.4s ease-in-out, border 0.4s ease-in-out; 
   text-decoration: none;
   padding: 10px 0;
+  border-bottom: 1px solid transparent;
 }
 
 .menu-link:hover { 
@@ -354,12 +355,10 @@
 
 .planet {
   position: absolute;
-  top: 50%;
-  left: 50vw;
+  top: calc(50% - (384px / 2));
+  left: calc(50% - (384px / 2));
   height: 384px;
   width: 384px;
-  margin-left: calc(-384px / 2);
-  margin-top: calc(-384px / 2);
 }
 
 @media screen and (max-width: 1199px) { 
@@ -419,6 +418,8 @@
   list-style: none;
   cursor: pointer;
   opacity: 0.7;
+  border-bottom: 1px solid transparent;
+  border-right: 1px solid transparent;
   transition: opacity 0.4s ease-in-out, border 0.4s ease-in-out;
   padding: 32px 0;
 }
@@ -431,6 +432,8 @@
 }
 
 .card:nth-of-type(2n) {
+  border-left: 1px solid transparent;
+  border-right: 1px solid transparent;
   -webkit-box-shadow: 9px -18px 27px -4px rgba(255, 255, 255, 0.1) inset;
   -moz-box-shadow: 9px -18px 27px -4px rgba(255, 255, 255, 0.1) inset;
   box-shadow: 9px -18px 27px -4px rgba(158, 155, 155, 0.1) inset;
@@ -442,6 +445,8 @@
 }
 
 .card:nth-of-type(3n) {
+  border-bottom: 1px solid transparent;
+  border-top: 1px solid transparent;
   -webkit-box-shadow: -9px 18px 27px -4px rgba(255, 255, 255, 0.1) inset;
   -moz-box-shadow: -9px 18px 27px -4px rgba(255, 255, 255, 0.1) inset;
   box-shadow: -9px 18px 27px -4px rgba(158, 155, 155, 0.1) inset;
@@ -453,6 +458,8 @@
 }
 
 .card:nth-of-type(4n) {
+  border-bottom: 1px solid transparent;
+  border-top: 1px solid transparent;
   -webkit-box-shadow: 9px 18px 27px -4px rgba(255, 255, 255, 0.1) inset;
   -moz-box-shadow: 9px 18px 27px -4px rgba(255, 255, 255, 0.1) inset;
   box-shadow: 9px 18px 27px -4px rgba(158, 155, 155, 0.1) inset;
