@@ -387,7 +387,7 @@
 
 .info-gallery {
   display: grid;
-  grid-template-columns: repeat(2, 50%);
+  grid-template-columns: repeat(2, calc(50% - 5.5px));
   grid-template-rows: repeat(2, 1fr);
   gap: 11px;
   width: 100%;
